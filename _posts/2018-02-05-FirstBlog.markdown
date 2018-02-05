@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Love Story"
 date:   2018-02-05 15:19:33 +0800
-categories: jekyll update
+categories: diary
 ---
 # Love Story
 
-I love you, SongJiali.
+I love you, SJL.
