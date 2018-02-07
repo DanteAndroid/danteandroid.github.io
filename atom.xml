@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-02-06T07:46:41.000Z</updated>
+  <updated>2018-02-07T04:26:35.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>使用 GitHub-Pages 和 Hexo 搭建个人博客</title>
+    <link href="http://yoursite.com/2018/02/07/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://yoursite.com/2018/02/07/搭建个人博客/</id>
+    <published>2018-02-07T03:04:43.000Z</published>
+    <updated>2018-02-07T04:26:35.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>相信大多数人都使用过博客吧？最早的博客大概是QQ空间了。初高中的我们特别爱玩空间，转发着各种《男生看完会沉默，女生看了会流泪》、《喜欢与爱的区别》（尽管我们完全不懂爱）这类文章。后来百度也想分一块蛋糕，搞了一个什么百度空间，对于百度用户而言体验倒是还不错，后面没落的原因我也记不清了。</p><p>对于一个技术人员来说，写一些文章总是有益处的：既可以锻炼文笔、总结自己的经验、让自己的思维更清晰，又能给别人指路、避免踩一些没必要的坑。所以我想大家或许都在 CSDN 之类的技术网站创建过 Blog 吧。我也建立过，后来……就没有后来了。因为我用了世界上最大的同性交友网站 GayHub 哦不，是 GitHub。用了它之后，我如果想写什么东西，直接创建一个 repository 在 README 里写就好了。</p><p>慢慢地，我发现 repository 已经不能满足我的欲♂望了。倒不是我写的东西太多了，只是它的逼格还不够高（真的只是这样）。于是乎，我们自然而然地了解到了标题的内容，在我的实践之后也就有了今天这篇文章。顺便补充一句，一开始我用的是 Github 官方支持的 <a href="http://jekyllcn.com/docs/home/" target="_blank" rel="noopener">Jekyll</a>，无奈遇到了很多坑（文档不够清晰也许是我理解能力差，但是我试了好多方法，怎么都改不了主题），只能转战 <a href="https://hexo.io/docs/" target="_blank" rel="noopener">Hexo</a>，好在后者也是主流的 blog framework，用起来倒没什么问题。</p><h2 id="有什么好处？"><a href="#有什么好处？" class="headerlink" title="有什么好处？"></a>有什么好处？</h2><p>使用 GitHub-Pages 和 Hexo 搭建博客，可以让你拥有美观的主题，由于服务器在 Github，可以避免因为政策原因受到莫名其妙的和谐。</p><h1 id="开始吧！"><a href="#开始吧！" class="headerlink" title="开始吧！"></a>开始吧！</h1><h2 id="0-安装-Hexo"><a href="#0-安装-Hexo" class="headerlink" title="0. 安装 Hexo"></a>0. 安装 <a href="https://hexo.io/docs/" target="_blank" rel="noopener">Hexo</a></h2><p>安装 Hexo 很简单。但是首先你得确保你安装了 <a href="http://nodejs.org/" target="_blank" rel="noopener">Node.js</a> 和 <a href="http://git-scm.com/" target="_blank" rel="noopener">Git</a>：</p><p><code>$ npm install -g hexo-cli</code></p><h2 id="1-创建博客"><a href="#1-创建博客" class="headerlink" title="1. 创建博客"></a>1. 创建博客</h2><p>下面的命令创建了一个名为 blog 的文件夹并且进行了初始化）：</p><pre><code>$ mkdir blog$ hexo init blog$ cd blog$ npm install</code></pre><p>执行完毕，你的 blog 文件夹会长这样：</p><pre><code>├── _config.yml├── package.json├── scaffolds├── source|   ├── _drafts|   └── _posts└── themes</code></pre><h2 id="2-写文章"><a href="#2-写文章" class="headerlink" title="2. 写文章"></a>2. 写文章</h2><p>使用下面的命令来创建文章，新建的文章会生成在<code>source/_posts</code>目录 ：</p><p><code>$ hexo new [layout] &lt;title&gt;</code></p><p>其中<code>layout</code>是可选的，默认有<code>post</code>, <code>page</code> , <code>draft</code>三种，你可以到<code>scaffolds</code>目录下查看，你也可以自定义布局。如果不输入<code>layout</code>默认为 <code>post</code>。</p><h2 id="3-发布博客"><a href="#3-发布博客" class="headerlink" title="3. 发布博客"></a>3. 发布博客</h2><p>生成静态文件的命令是<code>$ hexo generate</code>，我不知道啥时候用，就不说了。</p><p>至于发布博客，严格来说叫部署（deploy）也很简单。</p><ol><li><a href="https://github.com/new" target="_blank" rel="noopener">创建</a>一个以<code>你的用户名.github.io</code>为名称的仓库</li><li>安装插件：<code>npm install hexo-deployer-git --save</code> </li><li>到<code>_config.yml</code>配置一下你的 Git 地址（顺便把其他自定义的东西也改了吧）：</li></ol><pre><code>deploy:  type: git  repo: https://github.com/你的用户名/你的用户名.github.io  branch: master  message: [message]</code></pre><ol><li>部署博客：<code>$ hexo deploy</code>或者<code>$ hexo deploy --generate</code></li></ol><p>搞定！现在<code>你的用户名.github.io</code>就是你的个人博客了！如果还不想发布（或者发布失败），只是本地预览，可以使用：<code>$ hexo serve</code>来开启本地服务，并且浏览器里打开 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> 来看看博客是否符合你的预期。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;相信大多数人都使用过博客吧？最早的博客大概是QQ空间了。初高中的我们特别爱玩空间，转发着各种《男生看完会沉默，女生看了会流泪》、《喜欢与爱的
+      
+    
+    </summary>
+    
+    
+      <category term="blog" scheme="http://yoursite.com/tags/blog/"/>
+    
+  </entry>
+  
+  <entry>
     <title>test</title>
     <link href="http://yoursite.com/2018/02/06/test/"/>
     <id>http://yoursite.com/2018/02/06/test/</id>
     <published>2018-02-06T07:46:41.000Z</published>
-    <updated>2018-02-06T07:46:41.000Z</updated>
+    <updated>2018-02-07T03:03:52.000Z</updated>
     
     <summary type="html">
     
@@ -35,7 +58,7 @@
     <link href="http://yoursite.com/2018/02/06/hello-world/"/>
     <id>http://yoursite.com/2018/02/06/hello-world/</id>
     <published>2018-02-06T07:43:45.000Z</published>
-    <updated>2018-02-06T07:43:45.000Z</updated>
+    <updated>2018-02-07T03:03:37.000Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
     
