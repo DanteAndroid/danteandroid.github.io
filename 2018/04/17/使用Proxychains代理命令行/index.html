@@ -82,17 +82,13 @@
 </code></pre><p>vim是文本编辑命令，按下<code>I</code>进入编辑，找到文件最后的<code>[ProxyList]</code>, 输入步骤2查看的本地监听地址和端口，如<code>socks5  127.0.0.1 1080</code>, 然后点esc，输入<code>:wq</code>进行保存</p>
 <h2 id="4-无法代理？"><a href="#4-无法代理？" class="headerlink" title="4. 无法代理？"></a>4. 无法代理？</h2><p>如果使用的<strong>OS X 系统 是 10.11 以下，则跳过这一步</strong>。由于 OS X 的新版本引入了一个新机制 <code>SIP (System Integrity Protection)</code>，即使 Root 权限也不能对一些二进制进行修改，这些二进制是在 <code>/System，/bin，/sbin，/usr (except /usr/local)</code> 中的。这就影响了 <code>proxychains</code> 的作用范围，不在上述目录中的二进制可以使用 <code>proxychains</code>，而在其中的就不行了。从目前的资料有来，有以下两种解决方法：</p>
 <ul>
-<li><p>把所有命令都放在/bin里，把/bin放在路径里</p>
-</li>
-<li><p>关闭 <code>SIP</code>：</p>
-<ol>
+<li>把所有命令都放在/bin里，把/bin放在路径里</li>
+<li>关闭 <code>SIP</code>：<ol>
 <li>重启电脑，在重启的界面上按住 <em>Command</em> 和 <em>R</em> 键进入 <code>Recovery Mode</code>；</li>
+<li>左上角通用工具选择终端，运行：<code>csrutil disable</code> 和 <code>reboot</code></li>
 </ol>
 </li>
 </ul>
-<ol>
-<li>左上角通用工具选择终端，运行：<code>csrutil disable</code> 和 <code>reboot</code></li>
-</ol>
 <h2 id="5-使用-Proxychains"><a href="#5-使用-Proxychains" class="headerlink" title="5. 使用 Proxychains"></a>5. 使用 Proxychains</h2><p>在要使用代理的命令前面加上 <code>proxychains4</code>即可；或者对当前终端都使用代理：</p>
 <pre><code class="bash">Proxychains4 bash
 </code></pre>
