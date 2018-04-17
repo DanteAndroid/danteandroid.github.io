@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="YouTube 是全球最大的视频网站，人类的希望 Google 的子公司。下图显示了无法观看 YouTube 的国家（或地区），包括但不限于：伊朗、土耳其、中国和巴基斯坦等。">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Dante">
+    
+
+    <!-- Title -->
+    
+    <title>一行命令下载YouTube视频 | Hello, the fucking world</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Noto+Serif:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <!-- Content -->
+    <section class="article-container">
+<!-- Back Home -->
+<a class="nav-back" href="/">
+    <i class="fa fa-puzzle-piece"></i>
+</a>
+
+<!-- Page Header -->
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>一行命令下载YouTube视频</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Main Content -->
+            <div class="post-content col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <script src="/assets/js/APlayer.min.js"> </script><p><a href="youtube.com">YouTube</a> 是全球最大的视频网站，人类的希望 Google 的子公司。下图显示了无法观看 YouTube 的国家（或地区），包括但不限于：伊朗、土耳其、中国和巴基斯坦等。</p>
+<a id="more"></a>
+<p><img src="https://www.motherjones.com/wp-content/uploads/socialmediamap-1.jpg" alt=""></p>
+<p>借助 SS 我们<code>Across the Great Wall, we can reach every corner in the world</code>。但是对于优秀的视频，我们还可以选择下载下来，毕竟 YouTube 很多2k、4k的高清视频。借助 <a href="https://github.com/rg3/youtube-dl" target="_blank" rel="noopener">YouTube-DL</a> ，一行命令就可以搞定，甚至支持 YouTube 之外的很多视频网站。</p>
+<h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h2><pre><code class="bash">sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
+sudo chmod a+rx /usr/local/bin/youtube-dl
+</code></pre>
+<p>如果没有 <code>curl</code>：</p>
+<pre><code class="bash">sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
+sudo chmod a+rx /usr/local/bin/youtube-dl
+</code></pre>
+<p>然后<code>brew install youtube-dl</code>即可。</p>
+<h2 id="2-配置（可选）"><a href="#2-配置（可选）" class="headerlink" title="2. 配置（可选）"></a>2. 配置（可选）</h2><p>在系统根目录下创建一个<code>/etc/youtube-dl.conf</code>文件，然后<code>vim /etc/youtube-dl.conf</code>或者直接打开文件编辑之：</p>
+<pre><code class="bash"># 在Shadowsocks客户端的设置里查看 Socks5 的本地监听地址和端口
+--proxy socks5://127.0.0.1:1080
+
+# 这个命令表示下载分辨率高度不大于1440，音质选择最佳的视频
+-f &#39;bestvideo[height&lt;=1440]+bestaudio&#39;
+
+# 下载文件夹路径
+-o /Volumes/Downs/Video/%(title)s.%(ext)s
+</code></pre>
+<h2 id="3-使用"><a href="#3-使用" class="headerlink" title="3. 使用"></a>3. 使用</h2><p>如果你没有配置，则可以在命令行里指定代理或者下载视频的具体配置（格式、分辨率等）：</p>
+<pre><code class="bash">youtube-dl -f bestvideo+bestaudio --proxy socks5://127.0.0.1:1080 https://www.youtube.com/watch?v=Mo949gB8-W0
+</code></pre>
+<p>如果你已经配置，或者想使用默认配置，则直接<code>youtube-dl</code>+ 视频 url 即可：</p>
+<pre><code class="bash">youtube-dl https://www.youtube.com/watch?v=Mo949gB8-W0
+</code></pre>
+<p>请注意，如果下载失败，那么可能是你需要配置正确的代理。如果你使用 Shadowsocks，在客户端的设置里查看 Socks5 的本地监听地址和端口</p>
+
+ 
+                <!-- Meta -->
+                <div class="post-meta">
+                    <hr>
+                    <br>
+                    <div class="post-tags">
+                        
+                            
+
+<a href="/tags/proxy/">#proxy</a>
+
+
+                        
+                    </div>
+                    <div class="post-date">
+                        2018 年 04 月 17 日
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comments -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <!-- Disqus Comments -->
+
+
+            </div>
+        </div>
+    </div>
+</article>
+</section>
+
+    <!-- Scripts -->
+    <!-- jQuery -->
+<script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+	console.log('Hexo-theme-hollow designed by zchen9 🙋 © 2015-' + (new Date()).getFullYear());
+</script>
+
+    <!-- Google Analytics -->
+    
+
+</body>
+
+</html>
