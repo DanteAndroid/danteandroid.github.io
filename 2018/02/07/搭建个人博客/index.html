@@ -1,75 +1,131 @@
-<!DOCTYPE html>
-<html lang="zh-Hans">
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport"content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+  
+  
+  <title>  使用 GitHub-Pages 和 Hexo 搭建个人博客 |   World Hello</title>
 
-<!-- Head tag -->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  
+    <link rel="icon" href="/img/favicon.png">
+  
 
-    <!--Description-->
+
+  <!-- css -->
+  <link rel="stylesheet" href="/css/style.css">  
+  <!-- Jquery -->
+  <script src="//cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script> 
+  <!-- Add fancyBox -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script> 
+  <script src="/js/gallery.js"></script>
+  <!-- javascript --> 
+  <script src="/js/mobile.js"></script>  
+  <script src="/js/utils.js"></script>    
+  <script src="/js/script.js"></script>  
+</head> 
+  <body> 
+    <header class="header">
+	
+  <nav class="header-nav">       
+	
+  	<span class="iconfont icon-menu mobile-toggle"></span>  
+
+    <a class="header-logo" href="/"><span>Adios</a>  
+
+    <div class="header-menu">          
+              
+            
+
+              <a class="header-menu-link" id="header-menu-home" href="/">Home</a>     
+
+            
+            
+            
+
+              <a class="header-menu-link" id="header-menu-archives" href="/archives">Blogs</a>     
+
+            
+            
+            
+
+              <a class="header-menu-link" id="header-menu-tags" href="/tags">Tags</a>     
+
+            
+            
+            
+
+              <a class="header-menu-link" id="header-menu-about" href="/about">About</a>     
+
+            
+            
+            
+
+              <a class="iconfont icon-menu-search header-menu-link" id="header-menu-search"></a>
+
+            
+                
+    </div>  
     
-        <meta name="description" content="前言相信大多数人都使用过博客吧？最早的博客大概是QQ空间了。初高中的我们特别爱玩空间，转发着各种《男生看完会沉默，女生看了会流泪》、《喜欢与爱的区别》（尽管我们完全不懂爱）这类文章。后来百度也想分一块蛋糕，搞了一个什么百度空间，对于百度用户而言体验倒是还不错，后面没落的原因我也记不清了。">
-    
-
-    <!--Author-->
-    
-        <meta name="author" content="Dante">
-    
-
-    <!-- Title -->
-    
-    <title>使用 GitHub-Pages 和 Hexo 搭建个人博客 | Hello, the fucking world</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/style.css">
-
-    <!-- Custom Fonts -->
-    <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Noto+Serif:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-
-<body>
-
-    <!-- Content -->
-    <section class="article-container">
-<!-- Back Home -->
-<a class="nav-back" href="/">
-    <i class="fa fa-puzzle-piece"></i>
-</a>
-
-<!-- Page Header -->
-<header class="intro-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <h1>使用 GitHub-Pages 和 Hexo 搭建个人博客</h1>
-                </div>
-            </div>
-        </div>
-    </div>
+  </nav>
 </header>
 
-<!-- Post Content -->
-<article>
-    <div class="container">
-        <div class="row">
-            <!-- Post Main Content -->
-            <div class="post-content col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <script src="/assets/js/APlayer.min.js"> </script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>相信大多数人都使用过博客吧？最早的博客大概是QQ空间了。初高中的我们特别爱玩空间，转发着各种《男生看完会沉默，女生看了会流泪》、《喜欢与爱的区别》（尽管我们完全不懂爱）这类文章。后来百度也想分一块蛋糕，搞了一个什么百度空间，对于百度用户而言体验倒是还不错，后面没落的原因我也记不清了。</p>
+    <div class="container">         
+      
+        
+
+          <section id="main">  
+
+        
+
+        <article class="post">
+
+	  
+	<div class="post-header slideDownMin center">
+
+	<span class="post-title">	
+		使用 GitHub-Pages 和 Hexo 搭建个人博客
+	</span>
+
+	
+	<div class="post-info">
+
+		<time class="post-time"><span class="iconfont icon-date"></span>
+		2018/02/07 	
+		</time>
+		
+						
+
+		
+				
+				<span class="post-meta">
+				<span class="iconfont icon-tag"></span>
+				<a class="tag-link" href="/tags/proxy/">proxy</a>
+				</span>			
+			
+
+
+		
+
+		<span class="post-words"><span class="iconfont icon-words"></span>
+		1493
+		</span>		
+	
+	</div> 
+
+</div> 
+
+
+	  <div class="post-content slideDownMin">
+
+		
+
+
+
+
+	  	<script src="/assets/js/APlayer.min.js"> </script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>相信大多数人都使用过博客吧？最早的博客大概是QQ空间了。初高中的我们特别爱玩空间，转发着各种《男生看完会沉默，女生看了会流泪》、《喜欢与爱的区别》（尽管我们完全不懂爱）这类文章。后来百度也想分一块蛋糕，搞了一个什么百度空间，对于百度用户而言体验倒是还不错，后面没落的原因我也记不清了。</p>
 <a id="more"></a>
 <p>对于一个技术人员来说，写一些文章总是有益处的：既可以锻炼文笔、总结自己的经验、让自己的思维更清晰，又能给别人指路、避免踩一些没必要的坑。所以我想大家或许都在 CSDN 之类的技术网站创建过 Blog 吧。我也建立过，后来……就没有后来了。因为我用了世界上最大的同性交友网站 GayHub 哦不，是 GitHub。用了它之后，我如果想写什么东西，直接创建一个 repository 在 README 里写就好了。</p>
 <p>慢慢地，我发现 repository 已经不能满足我的欲♂望了。倒不是我写的东西太多了，只是它的逼格还不够高（真的只是这样）。于是乎，我们自然而然地了解到了标题的内容，在我的实践之后也就有了今天这篇文章。顺便补充一句，一开始我用的是 Github 官方支持的 <a href="http://jekyllcn.com/docs/home/" target="_blank" rel="noopener">Jekyll</a>，无奈遇到了很多坑（文档不够清晰也许是我理解能力差，但是我试了好多方法，怎么都改不了主题），只能转战 <a href="https://hexo.io/docs/" target="_blank" rel="noopener">Hexo</a>，好在后者也是主流的 blog framework，用起来倒没什么问题。</p>
@@ -108,51 +164,269 @@ $ npm install
 <li>部署博客：<code>$ hexo deploy</code>或者<code>$ hexo deploy --generate</code></li>
 </ol>
 <p>搞定！现在<code>你的用户名.github.io</code>就是你的个人博客了！如果还不想发布（或者发布失败），只是本地预览，可以使用：<code>$ hexo serve</code>来开启本地服务，并且浏览器里打开 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> 来看看博客是否符合你的预期。</p>
+  	
+
+	  </div>     
+	  
+
+	<div class="post-footer">    
+
+  
+
+
+
+
+<span class="donate-btn iconfont icon-donate "></span>
+
+
+<div id="donate-box" class="sildeUpMin">
+
+	<span class="donate-cancel iconfont icon-cancel"></span>
+
+	<div class="donate-img-box">
+		<img id="donate-qr-wechat" class="donate-img no-gallery" src="/img/donate1.jpg"  alt="Lost">	
+		<img id="donate-qr-alipay" class="donate-img no-gallery" src="/img/donate2.jpg"  alt="Lost">	
+	</div>
+
+	<span class="donate-word">世界美好 你也是</span>
+
+	<div class="donate-list">
+		<span class="iconfont icon-donate-wechat"></span>
+		<span class="iconfont icon-donate-alipay"></span>
+	</div>
+
+</div>
 
  
-                <!-- Meta -->
-                <div class="post-meta">
-                    <hr>
-                    <br>
-                    <div class="post-tags">
-                        
-                            
-
-<a href="/tags/proxy/">#proxy</a>
+  
+	
+<script id="-mob-share" src="https://f1.webshare.mob.com/code/mob-share.js?appkey=21d601593a1de"></script>
+	
+	<span class="share-btn iconfont icon-share">
+	</span>
 
 
-                        
-                    </div>
-                    <div class="post-date">
-                        2018 年 02 月 07 日
-                    </div>
-                </div>
-            </div>
+	<div class="-mob-share sildeUpMin">
+		                  
+            <span class="iconfont  icon-share-qq -mob-share-qq" title="qq"></span>
+     	                  
+            <span class="iconfont  icon-share-weixin -mob-share-weixin" title="weixin"></span>
+     	                  
+            <span class="iconfont  icon-share-weibo -mob-share-weibo" title="weibo"></span>
+     	                  
+            <span class="iconfont  icon-share-douban -mob-share-douban" title="douban"></span>
+     	   
+	</div>
+	
 
-            <!-- Comments -->
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <!-- Disqus Comments -->
 
 
-            </div>
-        </div>
+   <nav class="post-nav">
+
+      
+       
+
+         
+
+      
+          <a href="/2018/04/17/使用Proxychains代理命令行/">          
+
+            <span class="hover-item" title="使用Proxychains代理命令行">  Prev </span>  
+
+          </a>
+    
+      
+    
+      
+
+         
+
+          <a href="/2018/02/06/test/">         
+
+           <span title="Article Test">Next </span>  
+
+          </a>
+
+      
+
+  </nav>  
+</div> 
+	
+
+
+    <div id="comment">   
     </div>
+
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+
+    <script src='//unpkg.com/valine@v1.1.8-beta/dist/Valine.min.js'></script>
+
+    <script>
+        new Valine({
+        el: '#comment',
+        notify:false, 
+        verify:false, 
+        app_id: '6BB5zmKV580g9Cf3UOM1jga3-gzGzoHsz',
+        app_key: 'BM6ksQFgDY5Yq75BMrfM4PHb',  
+        path:window.location.pathname, 
+        avatar:'mm' ,
+        guest_info:['nick','mail']
+        });
+    </script>
+
+
+    <script>
+    //set the placeholder
+    $(function(){    
+
+        $('.vnick').attr('placeholder','Nick');
+        $('.veditor').attr('placeholder','Typing something here.');
+        $('.vmail').attr('placeholder','Mail');   
+        $('.vsubmit').html('Submit');   
+       
+    })  
+    </script>
+
+	
+
 </article>
-</section>
 
-    <!-- Scripts -->
-    <!-- jQuery -->
-<script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
-<!-- Bootstrap -->
-<script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-<script type="text/javascript">
-	console.log('Hexo-theme-hollow designed by zchen9 🙋 © 2015-' + (new Date()).getFullYear());
-</script>
 
-    <!-- Google Analytics -->
+<div id="toc" >		
+
+	<div class="toc-container">	
+
+	<span class="toc-contents iconfont icon-open"" onclick="change()"> 
+	<span>Contents</span>
+	</span>
+
+	<ul class="toc-list"></ul>
+
+	</div>
+
+</div>
+
+
+<script src="/js/toc.js"></script>
+<script src="/js/post.js"></script></section> 
+
+    </div>        
+
+    
+    <div class="mask"> </div>
+    <div class="back-to-top iconfont icon-backtotop fadeIn"></div> 
+
     
 
-</body>
 
+<script src="/js/search.js"></script>     
+          
+          <div class="search-container sildeUpMin">
+            <input type="text" placeholder="Typing Something here." id="search-input" class="search-input">  
+              <span class="search-cancel iconfont icon-cancel"></span>
+              <div id="search-result" class="search-result"></div>
+          </div>
+ 
+
+     <div class="mobile-menu">      
+
+      
+      <img class="mobile-menu-icon no-gallery" src= /img/favicon.png >   
+      
+
+         
+            
+
+            <a class="mobile-menu-link" href="/">Home
+            </a>
+            
+         
+            
+
+            <a class="mobile-menu-link" href="/archives">Blogs
+            </a>
+            
+         
+            
+
+            <a class="mobile-menu-link" href="/tags">Tags
+            </a>
+            
+         
+            
+
+            <a class="mobile-menu-link" href="/about">About
+            </a>
+            
+         
+                          
+
+            <a class="mobile-menu-link mobile-menu-search" href="#">Search </a>                 
+            
+         
+</div>     
+    
+
+<footer id="footer">
+	   
+   	 
+
+	  
+	   	 		<div>	
+
+		    	 <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+		   
+			     <span class="iconfont icon-pv"></span>
+			     <span id="busuanzi_value_site_pv"></span>
+			 
+			     <span class="iconfont icon-uv"></span>
+			     <span id="busuanzi_value_site_uv"></span>
+
+			     </div>
+	 	
+   	
+      	 
+	 <div>
+	 	&copy;
+		2018
+		Dante	 
+
+	 </div>
+
+
+   
+   	 <div>
+	
+	 <a href="http://hexo.io/" target="_blank">Hexo</a>
+
+	 Theme
+
+	 <a href="https://github.com/Lemonreds/hexo-theme-Nayo" target="_blank">Nayo</a> 
+
+	 </div>	
+
+
+	
+	
+</footer> 
+    
+
+<!-- Baidu Analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?636802045446222199ae541e32c8133e"; 
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+
+ 
+  </body>   
+  <script src="/js/animation.js"></script>   
 </html>
