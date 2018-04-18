@@ -2,28 +2,38 @@
 <html>
   <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <meta name="viewport"content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
   
   
-  <title>  &#x4F7F;&#x7528; GitHub-Pages &#x548C; Hexo &#x642D;&#x5EFA;&#x4E2A;&#x4EBA;&#x535A;&#x5BA2; |   Nayo </title>
+  <title>  使用 GitHub-Pages 和 Hexo 搭建个人博客 |   World Hello</title>
 
  
   
-    <link rel="icon" href="/images/favicon.png">
+    <link rel="icon" href="/img/favicon.png">
   
 
 
-  <link rel="stylesheet" href="/nayo.min.css"> 
-</head>  
-  <body>   
-    
-      <header class="header">
+  <!-- css -->
+  <link rel="stylesheet" href="/css/style.css">  
+  <!-- Jquery -->
+  <script src="//cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script> 
+  <!-- Add fancyBox -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script> 
+  <script src="/js/gallery.js"></script>
+  <!-- javascript --> 
+  <script src="/js/mobile.js"></script>  
+  <script src="/js/utils.js"></script>    
+  <script src="/js/script.js"></script>  
+</head> 
+  <body> 
+    <header class="header">
 	
-  <nav class="header-nav">        
-   
-    <span class="iconfont icon-menu mobile-toggle"></span>   	
+  <nav class="header-nav">       
+	
+  	<span class="iconfont icon-menu mobile-toggle"></span>  
 
-    <a class="header-logo" href="/">Nayo</a>  
+    <a class="header-logo" href="/"><span>Adios</a>  
 
     <div class="header-menu">          
               
@@ -35,7 +45,7 @@
             
             
 
-              <a class="header-menu-link" id="header-menu-archives" href="/archives">Archives</a>     
+              <a class="header-menu-link" id="header-menu-archives" href="/archives">Blogs</a>     
 
             
             
@@ -60,46 +70,64 @@
     </div>  
     
   </nav>
-</header>   
+</header>
 
-      <div class="container">       
-          
-          
-            <section class="main">  
-          
+    <div class="container">         
+      
+        
 
-          <article class="post">
-  
-	<div class="post-header">
+          <section id="main">  
 
-	<p class="post-title">	
-		&#x4F7F;&#x7528; GitHub-Pages &#x548C; Hexo &#x642D;&#x5EFA;&#x4E2A;&#x4EBA;&#x535A;&#x5BA2;
-	</p>
-			
+        
 
-	<div class="meta-info">	
-	<span>
-		Feb 07, 2018
+        <article class="post">
+
+	  
+	<div class="post-header slideDownMin center">
+
+	<span class="post-title">	
+		使用 GitHub-Pages 和 Hexo 搭建个人博客
 	</span>
 
 	
+	<div class="post-info">
+
+		<time class="post-time"><span class="iconfont icon-date"></span>
+		2018/02/07 	
+		</time>
+		
+						
+
+		
+				
+				<span class="post-meta">
+				<span class="iconfont icon-tag"></span>
+				<a class="tag-link" href="/tags/proxy/">proxy</a>
+				</span>			
+			
+
+
+		
+
+		<span class="post-words"><span class="iconfont icon-words"></span>
+		7709
+		</span>		
 	
-		<i class="iconfont icon-words"></i>
-		<span>
-			7709
-		</span>
-	
-</div>
+	</div> 
 
 </div> 
-	 
+
 
 	  <div class="post-content slideDownMin">
 
 		
 
-		
-				<p>&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;&#x6280;&#x672F;&#x4EBA;&#x5458;&#x6765;&#x8BF4;&#xFF0C;&#x5199;&#x4E00;&#x4E9B;&#x6587;&#x7AE0;&#x603B;&#x662F;&#x6709;&#x76CA;&#x5904;&#x7684;&#xFF1A;&#x65E2;&#x53EF;&#x4EE5;&#x953B;&#x70BC;&#x6587;&#x7B14;&#x3001;&#x603B;&#x7ED3;&#x81EA;&#x5DF1;&#x7684;&#x7ECF;&#x9A8C;&#x3001;&#x8BA9;&#x81EA;&#x5DF1;&#x7684;&#x601D;&#x7EF4;&#x66F4;&#x6E05;&#x6670;&#xFF0C;&#x53C8;&#x80FD;&#x7ED9;&#x522B;&#x4EBA;&#x6307;&#x8DEF;&#x3001;&#x907F;&#x514D;&#x8E29;&#x4E00;&#x4E9B;&#x6CA1;&#x5FC5;&#x8981;&#x7684;&#x5751;&#x3002;&#x6240;&#x4EE5;&#x6211;&#x60F3;&#x5927;&#x5BB6;&#x6216;&#x8BB8;&#x90FD;&#x5728; CSDN &#x4E4B;&#x7C7B;&#x7684;&#x6280;&#x672F;&#x7F51;&#x7AD9;&#x521B;&#x5EFA;&#x8FC7; Blog &#x5427;&#x3002;&#x6211;&#x4E5F;&#x5EFA;&#x7ACB;&#x8FC7;&#xFF0C;&#x540E;&#x6765;&#x2026;&#x2026;&#x5C31;&#x6CA1;&#x6709;&#x540E;&#x6765;&#x4E86;&#x3002;&#x56E0;&#x4E3A;&#x6211;&#x7528;&#x4E86;&#x4E16;&#x754C;&#x4E0A;&#x6700;&#x5927;&#x7684;&#x540C;&#x6027;&#x4EA4;&#x53CB;&#x7F51;&#x7AD9; GayHub &#x54E6;&#x4E0D;&#xFF0C;&#x662F; GitHub&#x3002;&#x7528;&#x4E86;&#x5B83;&#x4E4B;&#x540E;&#xFF0C;&#x6211;&#x5982;&#x679C;&#x60F3;&#x5199;&#x4EC0;&#x4E48;&#x4E1C;&#x897F;&#xFF0C;&#x76F4;&#x63A5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; repository &#x5728; README &#x91CC;&#x5199;&#x5C31;&#x597D;&#x4E86;&#x3002;</p>
+
+
+
+	  	<script src="/assets/js/APlayer.min.js"> </script><h2 id="&#x524D;&#x8A00;"><a href="#&#x524D;&#x8A00;" class="headerlink" title="&#x524D;&#x8A00;"></a>&#x524D;&#x8A00;</h2><p>&#x76F8;&#x4FE1;&#x5927;&#x591A;&#x6570;&#x4EBA;&#x90FD;&#x4F7F;&#x7528;&#x8FC7;&#x535A;&#x5BA2;&#x5427;&#xFF1F;&#x6700;&#x65E9;&#x7684;&#x535A;&#x5BA2;&#x5927;&#x6982;&#x662F;QQ&#x7A7A;&#x95F4;&#x4E86;&#x3002;&#x521D;&#x9AD8;&#x4E2D;&#x7684;&#x6211;&#x4EEC;&#x7279;&#x522B;&#x7231;&#x73A9;&#x7A7A;&#x95F4;&#xFF0C;&#x8F6C;&#x53D1;&#x7740;&#x5404;&#x79CD;&#x300A;&#x7537;&#x751F;&#x770B;&#x5B8C;&#x4F1A;&#x6C89;&#x9ED8;&#xFF0C;&#x5973;&#x751F;&#x770B;&#x4E86;&#x4F1A;&#x6D41;&#x6CEA;&#x300B;&#x3001;&#x300A;&#x559C;&#x6B22;&#x4E0E;&#x7231;&#x7684;&#x533A;&#x522B;&#x300B;&#xFF08;&#x5C3D;&#x7BA1;&#x6211;&#x4EEC;&#x5B8C;&#x5168;&#x4E0D;&#x61C2;&#x7231;&#xFF09;&#x8FD9;&#x7C7B;&#x6587;&#x7AE0;&#x3002;&#x540E;&#x6765;&#x767E;&#x5EA6;&#x4E5F;&#x60F3;&#x5206;&#x4E00;&#x5757;&#x86CB;&#x7CD5;&#xFF0C;&#x641E;&#x4E86;&#x4E00;&#x4E2A;&#x4EC0;&#x4E48;&#x767E;&#x5EA6;&#x7A7A;&#x95F4;&#xFF0C;&#x5BF9;&#x4E8E;&#x767E;&#x5EA6;&#x7528;&#x6237;&#x800C;&#x8A00;&#x4F53;&#x9A8C;&#x5012;&#x662F;&#x8FD8;&#x4E0D;&#x9519;&#xFF0C;&#x540E;&#x9762;&#x6CA1;&#x843D;&#x7684;&#x539F;&#x56E0;&#x6211;&#x4E5F;&#x8BB0;&#x4E0D;&#x6E05;&#x4E86;&#x3002;</p>
+<a id="more"></a>
+<p>&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;&#x6280;&#x672F;&#x4EBA;&#x5458;&#x6765;&#x8BF4;&#xFF0C;&#x5199;&#x4E00;&#x4E9B;&#x6587;&#x7AE0;&#x603B;&#x662F;&#x6709;&#x76CA;&#x5904;&#x7684;&#xFF1A;&#x65E2;&#x53EF;&#x4EE5;&#x953B;&#x70BC;&#x6587;&#x7B14;&#x3001;&#x603B;&#x7ED3;&#x81EA;&#x5DF1;&#x7684;&#x7ECF;&#x9A8C;&#x3001;&#x8BA9;&#x81EA;&#x5DF1;&#x7684;&#x601D;&#x7EF4;&#x66F4;&#x6E05;&#x6670;&#xFF0C;&#x53C8;&#x80FD;&#x7ED9;&#x522B;&#x4EBA;&#x6307;&#x8DEF;&#x3001;&#x907F;&#x514D;&#x8E29;&#x4E00;&#x4E9B;&#x6CA1;&#x5FC5;&#x8981;&#x7684;&#x5751;&#x3002;&#x6240;&#x4EE5;&#x6211;&#x60F3;&#x5927;&#x5BB6;&#x6216;&#x8BB8;&#x90FD;&#x5728; CSDN &#x4E4B;&#x7C7B;&#x7684;&#x6280;&#x672F;&#x7F51;&#x7AD9;&#x521B;&#x5EFA;&#x8FC7; Blog &#x5427;&#x3002;&#x6211;&#x4E5F;&#x5EFA;&#x7ACB;&#x8FC7;&#xFF0C;&#x540E;&#x6765;&#x2026;&#x2026;&#x5C31;&#x6CA1;&#x6709;&#x540E;&#x6765;&#x4E86;&#x3002;&#x56E0;&#x4E3A;&#x6211;&#x7528;&#x4E86;&#x4E16;&#x754C;&#x4E0A;&#x6700;&#x5927;&#x7684;&#x540C;&#x6027;&#x4EA4;&#x53CB;&#x7F51;&#x7AD9; GayHub &#x54E6;&#x4E0D;&#xFF0C;&#x662F; GitHub&#x3002;&#x7528;&#x4E86;&#x5B83;&#x4E4B;&#x540E;&#xFF0C;&#x6211;&#x5982;&#x679C;&#x60F3;&#x5199;&#x4EC0;&#x4E48;&#x4E1C;&#x897F;&#xFF0C;&#x76F4;&#x63A5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; repository &#x5728; README &#x91CC;&#x5199;&#x5C31;&#x597D;&#x4E86;&#x3002;</p>
 <p>&#x6162;&#x6162;&#x5730;&#xFF0C;&#x6211;&#x53D1;&#x73B0; repository &#x5DF2;&#x7ECF;&#x4E0D;&#x80FD;&#x6EE1;&#x8DB3;&#x6211;&#x7684;&#x6B32;&#x2642;&#x671B;&#x4E86;&#x3002;&#x5012;&#x4E0D;&#x662F;&#x6211;&#x5199;&#x7684;&#x4E1C;&#x897F;&#x592A;&#x591A;&#x4E86;&#xFF0C;&#x53EA;&#x662F;&#x5B83;&#x7684;&#x903C;&#x683C;&#x8FD8;&#x4E0D;&#x591F;&#x9AD8;&#xFF08;&#x771F;&#x7684;&#x53EA;&#x662F;&#x8FD9;&#x6837;&#xFF09;&#x3002;&#x4E8E;&#x662F;&#x4E4E;&#xFF0C;&#x6211;&#x4EEC;&#x81EA;&#x7136;&#x800C;&#x7136;&#x5730;&#x4E86;&#x89E3;&#x5230;&#x4E86;&#x6807;&#x9898;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x5728;&#x6211;&#x7684;&#x5B9E;&#x8DF5;&#x4E4B;&#x540E;&#x4E5F;&#x5C31;&#x6709;&#x4E86;&#x4ECA;&#x5929;&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#x3002;&#x987A;&#x4FBF;&#x8865;&#x5145;&#x4E00;&#x53E5;&#xFF0C;&#x4E00;&#x5F00;&#x59CB;&#x6211;&#x7528;&#x7684;&#x662F; Github &#x5B98;&#x65B9;&#x652F;&#x6301;&#x7684; <a href="http://jekyllcn.com/docs/home/" target="_blank" rel="noopener">Jekyll</a>&#xFF0C;&#x65E0;&#x5948;&#x9047;&#x5230;&#x4E86;&#x5F88;&#x591A;&#x5751;&#xFF08;&#x6587;&#x6863;&#x4E0D;&#x591F;&#x6E05;&#x6670;&#x4E5F;&#x8BB8;&#x662F;&#x6211;&#x7406;&#x89E3;&#x80FD;&#x529B;&#x5DEE;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x8BD5;&#x4E86;&#x597D;&#x591A;&#x65B9;&#x6CD5;&#xFF0C;&#x600E;&#x4E48;&#x90FD;&#x6539;&#x4E0D;&#x4E86;&#x4E3B;&#x9898;&#xFF09;&#xFF0C;&#x53EA;&#x80FD;&#x8F6C;&#x6218; <a href="https://hexo.io/docs/" target="_blank" rel="noopener">Hexo</a>&#xFF0C;&#x597D;&#x5728;&#x540E;&#x8005;&#x4E5F;&#x662F;&#x4E3B;&#x6D41;&#x7684; blog framework&#xFF0C;&#x7528;&#x8D77;&#x6765;&#x5012;&#x6CA1;&#x4EC0;&#x4E48;&#x95EE;&#x9898;&#x3002;</p>
 <h2 id="&#x6709;&#x4EC0;&#x4E48;&#x597D;&#x5904;&#xFF1F;"><a href="#&#x6709;&#x4EC0;&#x4E48;&#x597D;&#x5904;&#xFF1F;" class="headerlink" title="&#x6709;&#x4EC0;&#x4E48;&#x597D;&#x5904;&#xFF1F;"></a>&#x6709;&#x4EC0;&#x4E48;&#x597D;&#x5904;&#xFF1F;</h2><p>&#x4F7F;&#x7528; GitHub-Pages &#x548C; Hexo &#x642D;&#x5EFA;&#x535A;&#x5BA2;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA9;&#x4F60;&#x62E5;&#x6709;&#x7F8E;&#x89C2;&#x7684;&#x4E3B;&#x9898;&#xFF0C;&#x7531;&#x4E8E;&#x670D;&#x52A1;&#x5668;&#x5728; Github&#xFF0C;&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x56E0;&#x4E3A;&#x653F;&#x7B56;&#x539F;&#x56E0;&#x53D7;&#x5230;&#x83AB;&#x540D;&#x5176;&#x5999;&#x7684;&#x548C;&#x8C10;&#x3002;</p>
 <h1 id="&#x5F00;&#x59CB;&#x5427;&#xFF01;"><a href="#&#x5F00;&#x59CB;&#x5427;&#xFF01;" class="headerlink" title="&#x5F00;&#x59CB;&#x5427;&#xFF01;"></a>&#x5F00;&#x59CB;&#x5427;&#xFF01;</h1><h2 id="0-&#x5B89;&#x88C5;-Hexo"><a href="#0-&#x5B89;&#x88C5;-Hexo" class="headerlink" title="0. &#x5B89;&#x88C5; Hexo"></a>0. &#x5B89;&#x88C5; <a href="https://hexo.io/docs/" target="_blank" rel="noopener">Hexo</a></h2><p>&#x5B89;&#x88C5; Hexo &#x5F88;&#x7B80;&#x5355;&#x3002;&#x4F46;&#x662F;&#x9996;&#x5148;&#x4F60;&#x5F97;&#x786E;&#x4FDD;&#x4F60;&#x5B89;&#x88C5;&#x4E86; <a href="http://nodejs.org/" target="_blank" rel="noopener">Node.js</a> &#x548C; <a href="http://git-scm.com/" target="_blank" rel="noopener">Git</a>&#xFF1A;</p>
@@ -135,41 +163,20 @@ $ npm install
 </code></pre><ol>
 <li>&#x90E8;&#x7F72;&#x535A;&#x5BA2;&#xFF1A;<code>$ hexo deploy</code>&#x6216;&#x8005;<code>$ hexo deploy --generate</code></li>
 </ol>
-<p>&#x641E;&#x5B9A;&#xFF01;&#x73B0;&#x5728;<code>&#x4F60;&#x7684;&#x7528;&#x6237;&#x540D;.github.io</code>&#x5C31;&#x662F;&#x4F60;&#x7684;&#x4E2A;&#x4EBA;&#x535A;&#x5BA2;&#x4E86;&#xFF01;&#x5982;&#x679C;&#x8FD8;&#x4E0D;&#x60F3;&#x53D1;&#x5E03;&#xFF08;&#x6216;&#x8005;&#x53D1;&#x5E03;&#x5931;&#x8D25;&#xFF09;&#xFF0C;&#x53EA;&#x662F;&#x672C;&#x5730;&#x9884;&#x89C8;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF1A;<code>$ hexo serve</code>&#x6765;&#x5F00;&#x542F;&#x672C;&#x5730;&#x670D;&#x52A1;&#xFF0C;&#x5E76;&#x4E14;&#x6D4F;&#x89C8;&#x5668;&#x91CC;&#x6253;&#x5F00; <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> &#x6765;&#x770B;&#x770B;&#x535A;&#x5BA2;&#x662F;&#x5426;&#x7B26;&#x5408;&#x4F60;&#x7684;&#x9884;&#x671F;&#x3002;</p>  	
-				
+<p>&#x641E;&#x5B9A;&#xFF01;&#x73B0;&#x5728;<code>&#x4F60;&#x7684;&#x7528;&#x6237;&#x540D;.github.io</code>&#x5C31;&#x662F;&#x4F60;&#x7684;&#x4E2A;&#x4EBA;&#x535A;&#x5BA2;&#x4E86;&#xFF01;&#x5982;&#x679C;&#x8FD8;&#x4E0D;&#x60F3;&#x53D1;&#x5E03;&#xFF08;&#x6216;&#x8005;&#x53D1;&#x5E03;&#x5931;&#x8D25;&#xFF09;&#xFF0C;&#x53EA;&#x662F;&#x672C;&#x5730;&#x9884;&#x89C8;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF1A;<code>$ hexo serve</code>&#x6765;&#x5F00;&#x542F;&#x672C;&#x5730;&#x670D;&#x52A1;&#xFF0C;&#x5E76;&#x4E14;&#x6D4F;&#x89C8;&#x5668;&#x91CC;&#x6253;&#x5F00; <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> &#x6765;&#x770B;&#x770B;&#x535A;&#x5BA2;&#x662F;&#x5426;&#x7B26;&#x5408;&#x4F60;&#x7684;&#x9884;&#x671F;&#x3002;</p>
+  	
+
 	  </div>     
 	  
 
-	
-<div class="post-meta">
-      	
+	<div class="post-footer">    
 
-      
-        <i class="iconfont icon-tag"></i>     
-          <a class="tag-link" href="/tags/proxy/">proxy</a>    
-      	
-</div>
+  
 
 
 
 
-
-<div class="post-footer">
-  <div class="pf-left">
-      <img class="pf-avatar" src="/images/header.jpg">
-      <p class="pf-des">hi,i am lemon</p>
-  </div>
-
-  <div class="pf-right">           
-      <div class="pf-links">
-        
-
-
-
-
-<span class="donate-btn">
-	<span class="iconfont icon-donate"></span>
-</span>
+<span class="donate-btn iconfont icon-donate "></span>
 
 
 <div id="donate-box" class="sildeUpMin">
@@ -177,11 +184,11 @@ $ npm install
 	<span class="donate-cancel iconfont icon-cancel"></span>
 
 	<div class="donate-img-box">
-		<img id="donate-qr-wechat" class="donate-img" src="/images/donate1.png" alt="No Donate Image!">	
-		<img id="donate-qr-alipay" class="donate-img" src="/images/donate2.png" alt="No Donate Image!">	
+		<img id="donate-qr-wechat" class="donate-img no-gallery" src="/img/donate1.jpg"  alt="Lost">	
+		<img id="donate-qr-alipay" class="donate-img no-gallery" src="/img/donate2.jpg"  alt="Lost">	
 	</div>
 
-	<span class="donate-word">&#x4E16;&#x754C;&#x7F8E;&#x597D; &#x4F60;&#x4E5F;&#x662F;</span>
+	<span class="donate-word">世界美好 你也是</span>
 
 	<div class="donate-list">
 		<span class="iconfont icon-donate-wechat"></span>
@@ -191,82 +198,141 @@ $ npm install
 </div>
 
  
-        
+  
 	
-<script id="-mob-share" src="http://f1.webshare.mob.com/code/mob-share.js?appkey=21d601593a1de"></script>
+<script id="-mob-share" src="https://f1.webshare.mob.com/code/mob-share.js?appkey=21d601593a1de"></script>
 	
-	<span class="share-btn">
-	<span class="iconfont icon-share"></span>
+	<span class="share-btn iconfont icon-share">
 	</span>
 
 
 	<div class="-mob-share sildeUpMin">
-		   			             
-            <a class="iconfont  icon-share-qq -mob-share-qq"></a>		
-     	   			             
-            <a class="iconfont  icon-share-weixin -mob-share-weixin"></a>		
-     	   			             
-            <a class="iconfont  icon-share-weibo -mob-share-weibo"></a>		
-     	   			             
-            <a class="iconfont  icon-share-douban -mob-share-douban"></a>		
-     	   			             
-            <a class="iconfont  icon-share-facebook -mob-share-facebook"></a>		
-     	   			             
-            <a class="iconfont  icon-share-twitter -mob-share-twitter"></a>		
-     	   			             
-            <a class="iconfont  icon-share-google -mob-share-google"></a>		
+		                  
+            <span class="iconfont  icon-share-qq -mob-share-qq" title="qq"></span>
+     	                  
+            <span class="iconfont  icon-share-weixin -mob-share-weixin" title="weixin"></span>
+     	                  
+            <span class="iconfont  icon-share-weibo -mob-share-weibo" title="weibo"></span>
+     	                  
+            <span class="iconfont  icon-share-douban -mob-share-douban" title="douban"></span>
      	   
-	</div>	
+	</div>
+	
 
-      </div>  
-    <nav class="pf-paginator">
+
+
+   <nav class="post-nav">
+
       
+       
+
          
-          <a href="/2018/04/17/&#x4F7F;&#x7528;Proxychains&#x4EE3;&#x7406;&#x547D;&#x4EE4;&#x884C;/" data-hover="&#x4F7F;&#x7528;Proxychains&#x4EE3;&#x7406;&#x547D;&#x4EE4;&#x884C;">Prev</a>      
-            
-        
+
       
-        
-        <a href="/2018/02/06/test/" data-hover="Article Test"> Next</a>
-            
-  </nav>   
-  </div>
+          <a href="/2018/04/17/使用Proxychains代理命令行/">          
+
+            <span class="hover-item" title="使用Proxychains代理命令行">  Prev </span>  
+
+          </a>
+    
+      
+    
+      
+
+         
+
+          <a href="/2018/02/06/test/">         
+
+           <span title="Article Test">Next </span>  
+
+          </a>
+
+      
+
+  </nav>  
 </div> 
 	
+
+
+    <div id="comment">   
+    </div>
+
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+
+    <script src='//unpkg.com/valine@v1.1.8-beta/dist/Valine.min.js'></script>
+
+    <script>
+        new Valine({
+        el: '#comment',
+        notify:false, 
+        verify:false, 
+        app_id: '6BB5zmKV580g9Cf3UOM1jga3-gzGzoHsz',
+        app_key: 'BM6ksQFgDY5Yq75BMrfM4PHb',  
+        path:window.location.pathname, 
+        avatar:'mm' ,
+        guest_info:['nick','mail']
+        });
+    </script>
+
+
+    <script>
+    //set the placeholder
+    $(function(){    
+
+        $('.vnick').attr('placeholder','Nick');
+        $('.veditor').attr('placeholder','Typing something here.');
+        $('.vmail').attr('placeholder','Mail');   
+        $('.vsubmit').html('Submit');   
+       
+    })  
+    </script>
+
 	
+
 </article>
 
-          </section> 
-      </div>            
+
+
+<div id="toc" >		
+
+	<div class="toc-container">	
+
+	<span class="toc-contents iconfont icon-open"" onclick="change()"> 
+	<span>Contents</span>
+	</span>
+
+	<ul class="toc-list"></ul>
+
+	</div>
+
+</div>
+
+
+<script src="/js/toc.js"></script>
+<script src="/js/post.js"></script></section> 
+
+    </div>        
+
     
-    <a id="backTop">
-      <span>
-        <i class="iconfont icon-backtotop"></i>
-      </span>
-    </a> 
+    <div class="mask"> </div>
+    <div class="back-to-top iconfont icon-backtotop fadeIn"></div> 
 
-  
     
 
-        
-        <div class="search-container sildeUpMin">
 
-
-            <div class="search-header">
-            <input type="text" placeholder="Typing Something here." id="search-input" class="search-input">  
-            <span class="search-cancel iconfont icon-cancel"></span>
+<script src="/js/search.js"></script>     
           
-            </div>
-              
-            <div id="search-result" class="search-result"></div>
-
-        </div>
+          <div class="search-container sildeUpMin">
+            <input type="text" placeholder="Typing Something here." id="search-input" class="search-input">  
+              <span class="search-cancel iconfont icon-cancel"></span>
+              <div id="search-result" class="search-result"></div>
+          </div>
  
 
      <div class="mobile-menu">      
 
       
-      <img class="mobile-menu-icon lazyload" src="/images/placeholder.gif" data-src="/images/favicon.png">   
+      <img class="mobile-menu-icon no-gallery" src= /img/favicon.png >   
       
 
          
@@ -278,7 +344,7 @@ $ npm install
          
             
 
-            <a class="mobile-menu-link" href="/archives">Archives
+            <a class="mobile-menu-link" href="/archives">Blogs
             </a>
             
          
@@ -299,11 +365,54 @@ $ npm install
             <a class="mobile-menu-link mobile-menu-search" href="#">Search </a>                 
             
          
-      
-</div>        
+</div>     
     
 
+<footer id="footer">
+	   
+   	 
 
+	  
+	   	 		<div>	
+
+		    	 <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+		   
+			     <span class="iconfont icon-pv"></span>
+			     <span id="busuanzi_value_site_pv"></span>
+			 
+			     <span class="iconfont icon-uv"></span>
+			     <span id="busuanzi_value_site_uv"></span>
+
+			     </div>
+	 	
+   	
+      	 
+	 <div>
+	 	&copy;
+		2018
+		Dante	 
+
+	 </div>
+
+
+   
+   	 <div>
+	
+	 <a href="http://hexo.io/" target="_blank">Hexo</a>
+
+	 Theme
+
+	 <a href="https://github.com/Lemonreds/hexo-theme-Nayo" target="_blank">Nayo</a> 
+
+	 </div>	
+
+
+	
+	
+</footer> 
+    
+
+<!-- Baidu Analytics -->
 <script>
 var _hmt = _hmt || [];
 (function() {
@@ -317,32 +426,7 @@ var _hmt = _hmt || [];
 
 
 
-
-     
-    
-
-
-
-
-<footer id="footer">	    
-
-		
-		<div class="footer-copyright">
-		&#xA9;
-		
-		2018		
-	
-		Lemon
-		<br>
-
-		Built By Theme
-		<a href="https://github.com/Lemonreds/hexo-theme-Nayo" target="_blank">Nayo</a>	
-		</div>			
-	 
-</footer>   
-
-  
-
-    <script src="/nayo.bundle.js"></script>           
-  </body>        
+ 
+  </body>   
+  <script src="/js/animation.js"></script>   
 </html>

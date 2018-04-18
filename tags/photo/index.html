@@ -2,28 +2,38 @@
 <html>
   <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <meta name="viewport"content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
   
   
-  <title>  Tags: photo |   Nayo </title>
+  <title>  Tags: photo |   World Hello</title>
 
  
   
-    <link rel="icon" href="/images/favicon.png">
+    <link rel="icon" href="/img/favicon.png">
   
 
 
-  <link rel="stylesheet" href="/nayo.min.css"> 
-</head>  
-  <body>   
-    
-      <header class="header">
+  <!-- css -->
+  <link rel="stylesheet" href="/css/style.css">  
+  <!-- Jquery -->
+  <script src="//cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script> 
+  <!-- Add fancyBox -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script> 
+  <script src="/js/gallery.js"></script>
+  <!-- javascript --> 
+  <script src="/js/mobile.js"></script>  
+  <script src="/js/utils.js"></script>    
+  <script src="/js/script.js"></script>  
+</head> 
+  <body> 
+    <header class="header">
 	
-  <nav class="header-nav">        
-   
-    <span class="iconfont icon-menu mobile-toggle"></span>   	
+  <nav class="header-nav">       
+	
+  	<span class="iconfont icon-menu mobile-toggle"></span>  
 
-    <a class="header-logo" href="/">Nayo</a>  
+    <a class="header-logo" href="/"><span>Adios</a>  
 
     <div class="header-menu">          
               
@@ -35,7 +45,7 @@
             
             
 
-              <a class="header-menu-link" id="header-menu-archives" href="/archives">Archives</a>     
+              <a class="header-menu-link" id="header-menu-archives" href="/archives">Blogs</a>     
 
             
             
@@ -60,18 +70,22 @@
     </div>  
     
   </nav>
-</header>   
+</header>
 
-      <div class="container">       
-          
-          
-            <section class="main slideDownMin">
-          
+    <div class="container">         
+      
+        
 
-          <section>
+          <section id="main" class="slideDownMin" >
+
+        
+
+        <section class="block">
+
+
   
 
-      <span class="page-title"># photo</span>   
+      <span  class="page-title"># photo</span>   
         
              
 
@@ -79,51 +93,45 @@
 
 	   
 
-	   <article class="item slideDownMin">   	
+	   <div class="item animation-item slideDownMin">   	
 
-        <time class="item-date"> 2018-02-06</time>    
+        <span class="item-date"> 2018-02-06</span>    
 
         <a class="item-title" href="/2018/02/06/test/">Article Test</a>
 
-      </article>
+      </div>
 
        
 
         
 
     
+
 </section>
-          </section> 
-      </div>            
-    
-    <a id="backTop">
-      <span>
-        <i class="iconfont icon-backtotop"></i>
-      </span>
-    </a> 
+</section> 
 
-  
+    </div>        
+
+    
+    <div class="mask"> </div>
+    <div class="back-to-top iconfont icon-backtotop fadeIn"></div> 
+
     
 
-        
-        <div class="search-container sildeUpMin">
 
-
-            <div class="search-header">
-            <input type="text" placeholder="Typing Something here." id="search-input" class="search-input">  
-            <span class="search-cancel iconfont icon-cancel"></span>
+<script src="/js/search.js"></script>     
           
-            </div>
-              
-            <div id="search-result" class="search-result"></div>
-
-        </div>
+          <div class="search-container sildeUpMin">
+            <input type="text" placeholder="Typing Something here." id="search-input" class="search-input">  
+              <span class="search-cancel iconfont icon-cancel"></span>
+              <div id="search-result" class="search-result"></div>
+          </div>
  
 
      <div class="mobile-menu">      
 
       
-      <img class="mobile-menu-icon" src="/images/favicon.png">   
+      <img class="mobile-menu-icon no-gallery" src= /img/favicon.png >   
       
 
          
@@ -135,7 +143,7 @@
          
             
 
-            <a class="mobile-menu-link" href="/archives">Archives
+            <a class="mobile-menu-link" href="/archives">Blogs
             </a>
             
          
@@ -156,11 +164,54 @@
             <a class="mobile-menu-link mobile-menu-search" href="#">Search </a>                 
             
          
-      
-</div>        
+</div>     
     
 
+<footer id="footer">
+	   
+   	 
 
+	  
+	   	 		<div>	
+
+		    	 <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+		   
+			     <span class="iconfont icon-pv"></span>
+			     <span id="busuanzi_value_site_pv"></span>
+			 
+			     <span class="iconfont icon-uv"></span>
+			     <span id="busuanzi_value_site_uv"></span>
+
+			     </div>
+	 	
+   	
+      	 
+	 <div>
+	 	&copy;
+		2018
+		Dante	 
+
+	 </div>
+
+
+   
+   	 <div>
+	
+	 <a href="http://hexo.io/" target="_blank">Hexo</a>
+
+	 Theme
+
+	 <a href="https://github.com/Lemonreds/hexo-theme-Nayo" target="_blank">Nayo</a> 
+
+	 </div>	
+
+
+	
+	
+</footer> 
+    
+
+<!-- Baidu Analytics -->
 <script>
 var _hmt = _hmt || [];
 (function() {
@@ -174,32 +225,7 @@ var _hmt = _hmt || [];
 
 
 
-
-     
-    
-
-
-
-
-<footer id="footer">	    
-
-		
-		<div class="footer-copyright">
-		&#xA9;
-		
-		2018		
-	
-		Lemon
-		<br>
-
-		Built By Theme
-		<a href="https://github.com/Lemonreds/hexo-theme-Nayo" target="_blank">Nayo</a>	
-		</div>			
-	 
-</footer>   
-
-  
-
-    <script src="/nayo.bundle.js"></script>           
-  </body>        
+ 
+  </body>   
+  <script src="/js/animation.js"></script>   
 </html>
