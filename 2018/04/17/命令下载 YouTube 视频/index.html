@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
   
   
-  <title>  Article Test |   World Hello </title>
+  <title>  一行命令下载 YouTube 视频 |   World Hello </title>
 
  
   
@@ -73,20 +73,20 @@
 	<div class="post-header">
 
 	<p class="post-title">	
-		Article Test
+		一行命令下载 YouTube 视频
 	</p>
 			
 
 	<div class="meta-info">	
 	<span>
-		Feb 06, 2018
+		Apr 17, 2018
 	</span>
 
 	
 	
 		<i class="iconfont icon-words"></i>
 		<span>
-			175
+			1119
 		</span>
 	
 </div>
@@ -99,12 +99,36 @@
 		
 
 			
-					<script src="/assets/js/APlayer.min.js"> </script><p>&#x6D4B;&#x8BD5;&#x4E00;&#x4E0B;&#x56FE;&#x7247;&#x80FD;&#x4E0D;&#x80FD;&#x663E;&#x793A;~</p>
-<p><img src="/images/placeholder.gif" alt="" data-src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3031053483,3171700629&amp;fm=27&amp;gp=0.jpg" class="lazyload"></p>
+					<script src="/assets/js/APlayer.min.js"> </script><p><a href="youtube.com">YouTube</a> 是全球最大的视频网站，人类的希望 Google 的子公司。</p>
 <a id="more"></a>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XequIguJjFs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<p>下图显示了无法观看 YouTube 的国家（或地区），包括但不限于：伊朗、土耳其、中国和巴基斯坦等。</p>
+<p><img src="/images/placeholder.gif" alt="" data-src="https://www.motherjones.com/wp-content/uploads/socialmediamap-1.jpg" class="lazyload"></p>
+<p>借助 SS，<code>Across the Great Wall, we can reach every corner in the world</code>。但是对于优秀的视频，我们还可以选择下载下来，毕竟 YouTube 很多2k、4k的高清视频。借助 <a href="https://github.com/rg3/youtube-dl" target="_blank" rel="noopener">YouTube-DL</a> ，一行命令就可以搞定，甚至支持 YouTube 之外的很多视频网站。</p>
+<h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h2><pre><code class="bash">sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
+sudo chmod a+rx /usr/local/bin/youtube-dl
+</code></pre>
+<p>如果没有 <code>curl</code>：</p>
+<pre><code class="bash">sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
+sudo chmod a+rx /usr/local/bin/youtube-dl
+</code></pre>
+<p>然后<code>brew install youtube-dl</code>即可。</p>
+<h2 id="2-配置（可选）"><a href="#2-配置（可选）" class="headerlink" title="2. 配置（可选）"></a>2. 配置（可选）</h2><p>在系统根目录下创建一个<code>/etc/youtube-dl.conf</code>文件，然后<code>vim /etc/youtube-dl.conf</code>或者直接打开文件编辑之：</p>
+<pre><code class="bash"># 在Shadowsocks客户端的设置里查看 Socks5 的本地监听地址和端口
+--proxy socks5://127.0.0.1:1080
 
-<p>&#x6D4B;&#x8BD5;&#x4E00;&#x4E0B;&#x56FE;&#x7247;&#x3001;&#x89C6;&#x9891;&#x7B49;</p>
+# 这个命令表示下载分辨率高度不大于1440，音质选择最佳的视频
+-f &#39;bestvideo[height&lt;=1440]+bestaudio&#39;
+
+# 下载文件夹路径
+-o /Volumes/Downs/Video/%(title)s.%(ext)s
+</code></pre>
+<h2 id="3-使用"><a href="#3-使用" class="headerlink" title="3. 使用"></a>3. 使用</h2><p>如果你没有配置，则可以在命令行里指定代理或者下载视频的具体配置（格式、分辨率等）：</p>
+<pre><code class="bash">youtube-dl -f bestvideo+bestaudio --proxy socks5://127.0.0.1:1080 https://www.youtube.com/watch?v=Mo949gB8-W0
+</code></pre>
+<p>如果你已经配置，或者想使用默认配置，则直接<code>youtube-dl</code>+ 视频 url 即可：</p>
+<pre><code class="bash">youtube-dl https://www.youtube.com/watch?v=Mo949gB8-W0
+</code></pre>
+<p>请注意，如果下载失败，那么可能是你需要配置正确的代理。如果你使用 Shadowsocks，在客户端的设置里查看 Socks5 的本地监听地址和端口</p>
   	
 					
 	  </div>     
@@ -116,7 +140,7 @@
 
       
         <i class="iconfont icon-tag"></i>     
-          <a class="tag-link" href="/tags/photo/">photo</a>    
+          <a class="tag-link" href="/tags/proxy/">proxy</a>    
       	
 </div>
 
@@ -184,11 +208,11 @@
 
       </div>  
     <nav class="pf-paginator">
-      
-         
-          <a href="/2018/02/07/搭建个人博客/" data-hover="使用 GitHub-Pages 和 Hexo 搭建个人博客">Prev</a>      
-            
+           
         
+      
+        
+        <a href="/2018/04/17/使用 Proxychains 代理命令行/" data-hover="使用 Proxychains 代理命令行"> Next</a>
             
   </nav>   
   </div>
