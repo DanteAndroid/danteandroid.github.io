@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-04-20T02:29:10.000Z</updated>
+  <updated>2018-05-04T09:01:31.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>VR看视频教程</title>
+    <link href="http://yoursite.com/2018/05/04/VR%E7%9C%8B%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B/"/>
+    <id>http://yoursite.com/2018/05/04/VR看视频教程/</id>
+    <published>2018-05-04T08:51:07.000Z</published>
+    <updated>2018-05-04T09:01:31.000Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>众所周知，VR技术改变了我们的娱乐方式，而VR最精彩的一种应用就是观看不可描述的电影。那么如何使用VR设备来观看有立体感的VR电影呢？</p><a id="more"></a><h2 id="如何寻找VR视频资源？"><a href="#如何寻找VR视频资源？" class="headerlink" title="如何寻找VR视频资源？"></a>如何寻找VR视频资源？</h2><p>百度各种VR论坛一般可以下载，但是大多是一些风景啊、或者是分辨率很低的渣渣视频。我的资源是到<a href="https://item.taobao.com/item.htm?spm=a1z10.1-c.w4004-9569601534.4.5c9226c3VFlAmP&amp;id=563004540597" target="_blank" rel="noopener">这里购买</a>的，很清晰很强大。</p><h2 id="我是GEAR-VR用户："><a href="#我是GEAR-VR用户：" class="headerlink" title="我是GEAR VR用户："></a>我是GEAR VR用户：</h2><p>先下载 VR 视频。把<strong>名字带有HEVC的</strong>那个视频解压出来复制到手机或者手机内存卡，到<strong>自带的应用商店搜索<code>噜咔 VR</code></strong>下载安装（只有自带商店搜到的才是支持 Gear VR 的）然后打开即可。</p><h2 id="我是PSVR用户："><a href="#我是PSVR用户：" class="headerlink" title="我是PSVR用户："></a>我是PSVR用户：</h2><ol><li>先下载 PSVR 可用的 VR 视频（<a href="https://item.taobao.com/item.htm?spm=a1z10.1-c.w4004-9569601534.4.5c9226c3VFlAmP&amp;id=563004540597" target="_blank" rel="noopener">没有视频点这里</a>）。PSVR用户只要把<strong>名字不带有HEVC的</strong>那个视频解压出来，并在文件名中加上<code>_ou</code>即可，如KVR_180_ou.mp4</li></ol><ol><li>准备好U盘或移动硬盘，确保其格式为 FAT32 或者 exFAT（推荐），在里面建立名为<code>littlstar</code>的文件夹然后把刚刚重命名的视频拖进去，然后将U盘插入你的 PS4</li><li>打开 PS4——PS商店，点击搜索，输入 littlstar（除了国服其他服应该都有）搜索，下载<code>Littlstar VR Cinema</code>软件并打开，在软件内或者在电脑注册，然后登录 littlstar。</li><li>成功登录后点击手柄的圆圈返回到一个有五个方块的界面，点击<strong>LIBRARY</strong>（图书馆）即可读取本地视频。如果网络不行（可能需要翻墙也可能跟运营商有关）则无法使用 littlstar</li></ol><h2 id="我是暴风魔镜等其他国产VR盒子用户："><a href="#我是暴风魔镜等其他国产VR盒子用户：" class="headerlink" title="我是暴风魔镜等其他国产VR盒子用户："></a>我是暴风魔镜等其他国产VR盒子用户：</h2><p>先下载 VR 视频。把<strong>名字带有HEVC的</strong>那个视频解压出来复制到手机或者手机内存卡，下载安装 <a href="http://www.lukaplayer.com/" target="_blank" rel="noopener">噜咔 VR 播放器</a> 打开即可。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;众所周知，VR技术改变了我们的娱乐方式，而VR最精彩的一种应用就是观看不可描述的电影。那么如何使用VR设备来观看有立体感的VR电影呢？&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="VR" scheme="http://yoursite.com/tags/VR/"/>
+    
+  </entry>
   
   <entry>
     <title>一行命令下载 YouTube 视频</title>
@@ -83,12 +103,12 @@
     <published>2018-02-06T07:46:41.000Z</published>
     <updated>2018-04-17T07:06:48.000Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>&#x6D4B;&#x8BD5;&#x4E00;&#x4E0B;&#x56FE;&#x7247;&#x80FD;&#x4E0D;&#x80FD;&#x663E;&#x793A;~</p><p><img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3031053483,3171700629&amp;fm=27&amp;gp=0.jpg" alt=""></p><a id="more"></a><iframe width="560" height="315" src="https://www.youtube.com/embed/XequIguJjFs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><p>&#x6D4B;&#x8BD5;&#x4E00;&#x4E0B;&#x56FE;&#x7247;&#x3001;&#x89C6;&#x9891;&#x7B49;</p>]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>测试一下图片能不能显示~</p><p><img src="/images/placeholder.gif" alt="" data-src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3031053483,3171700629&amp;fm=27&amp;gp=0.jpg" class="lazyload"></p><a id="more"></a><iframe width="560" height="315" src="https://www.youtube.com/embed/XequIguJjFs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><p>测试一下图片、视频等</p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&amp;#x6D4B;&amp;#x8BD5;&amp;#x4E00;&amp;#x4E0B;&amp;#x56FE;&amp;#x7247;&amp;#x80FD;&amp;#x4E0D;&amp;#x80FD;&amp;#x663E;&amp;#x793A;~&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3031053483,3171700629&amp;amp;fm=27&amp;amp;gp=0.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;测试一下图片能不能显示~&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/placeholder.gif&quot; alt=&quot;&quot; data-src=&quot;https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3031053483,3171700629&amp;amp;fm=27&amp;amp;gp=0.jpg&quot; class=&quot;lazyload&quot;&gt;&lt;/p&gt;
     
     </summary>
     
