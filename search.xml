@@ -3,33 +3,6 @@
   
     
     <entry>
-      <title><![CDATA[VR看视频教程]]></title>
-      <url>/2018/05/04/VR/</url>
-      <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>众所周知，VR技术改变了我们的娱乐方式，而VR最精彩的一种应用就是观看不可描述的电影。那么如何使用VR设备来观看有立体感的VR电影呢？</p>
-<a id="more"></a>
-<h2 id="如何寻找VR视频资源？"><a href="#如何寻找VR视频资源？" class="headerlink" title="如何寻找VR视频资源？"></a>如何寻找VR视频资源？</h2><p>百度各种VR论坛一般可以下载，但是大多是一些风景啊、或者是分辨率很低的渣渣视频。我的资源是到<a href="https://item.taobao.com/item.htm?spm=a1z10.1-c.w4004-9569601534.4.5c9226c3VFlAmP&amp;id=563004540597" target="_blank" rel="noopener">这里购买</a>的（卖的不是设备，是视频），很清晰很强大。如果有什么问题直接旺旺询问，自动回复里有各种回答。</p>
-<h2 id="我是GEAR-VR用户："><a href="#我是GEAR-VR用户：" class="headerlink" title="我是GEAR VR用户："></a>我是GEAR VR用户：</h2><p>先下载 VR 视频（<a href="https://item.taobao.com/item.htm?spm=a1z10.1-c.w4004-9569601534.4.5c9226c3VFlAmP&amp;id=563004540597" target="_blank" rel="noopener">没有视频？</a>）。把<strong>名字带有HEVC的</strong>那个视频解压出来复制到手机或者手机内存卡，到<strong>自带的应用商店搜索<code>噜咔 VR</code></strong>下载安装（只有自带商店搜到的才是支持 Gear VR 的）然后打开即可。</p>
-<h2 id="我是PSVR用户："><a href="#我是PSVR用户：" class="headerlink" title="我是PSVR用户："></a>我是PSVR用户：</h2><ol>
-<li>先下载 PSVR 可用的 VR 视频（<a href="https://item.taobao.com/item.htm?spm=a1z10.1-c.w4004-9569601534.4.5c9226c3VFlAmP&amp;id=563004540597" target="_blank" rel="noopener">没有视频？</a>）。PSVR用户只要把<strong>名字不带有HEVC的</strong>那个视频解压出来，并在文件名中加上<code>_ou</code>即可，如KVR_180_ou.mp4</li>
-</ol>
-<ol>
-<li>准备好U盘或移动硬盘，确保其格式为 FAT32 或者 exFAT（推荐），在里面建立名为<code>littlstar</code>的文件夹然后把刚刚重命名的视频拖进去，然后将U盘插入你的 PS4</li>
-<li>打开 PS4——PS商店，点击搜索，输入 littlstar（除了国服其他服应该都有）搜索，下载<code>Littlstar VR Cinema</code>软件并打开，在软件内或者在电脑注册，然后登录 littlstar。</li>
-<li>成功登录后点击手柄的圆圈返回到一个有五个方块的界面，点击<strong>LIBRARY</strong>（图书馆）即可读取本地视频。如果网络不行（可能需要翻墙也可能跟运营商有关）则无法使用 littlstar</li>
-</ol>
-<h2 id="我是暴风魔镜等其他国产VR盒子用户："><a href="#我是暴风魔镜等其他国产VR盒子用户：" class="headerlink" title="我是暴风魔镜等其他国产VR盒子用户："></a>我是暴风魔镜等其他国产VR盒子用户：</h2><p>先下载 VR 视频（<a href="https://item.taobao.com/item.htm?spm=a1z10.1-c.w4004-9569601534.4.5c9226c3VFlAmP&amp;id=563004540597" target="_blank" rel="noopener">没有视频？</a>）。把<strong>名字带有HEVC的</strong>那个视频解压出来复制到手机或者手机内存卡，下载安装 <a href="http://www.lukaplayer.com/" target="_blank" rel="noopener">噜咔 VR 播放器</a> 打开即可。</p>
-]]></content>
-      
-        
-        <tags>
-            
-            <tag> VR </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[一行命令下载 YouTube 视频]]></title>
       <url>/2018/04/17/%E5%91%BD%E4%BB%A4%E4%B8%8B%E8%BD%BD%20YouTube%20%E8%A7%86%E9%A2%91/</url>
       <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p><a href="youtube.com">YouTube</a> 是全球最大的视频网站，人类的希望 Google 的子公司。</p>
